@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Informações sobre o cenário competitivo de Counter Strike: Global Offensive">
+    <meta name="author" content="Alessandro Lemons CSTSI - IFSul Campus Pelotas">
+    <meta name="keywords" content="csgo, e-sports, classificacao, jogos, steam">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon/favicon-32x32.png">
+    <title>Contate-me</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="/img/cs-go.png" alt=""></a>
+        </div>
+
+        <div class="header-nav">
+            <nav>
+                <ul>
+                    <li><a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/">Download
+                            CSGO</a></li>
+                    <li><a href="./contact.html">Contato</a></li>
+                    <li><a href="./nextgame.html">Jogos</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contact-background"></div>
+    <a href="./index.html" class="index_btn"><i class="fa-solid fa-circle-arrow-left"></i></a>
+
+    <div class="contact-wrapper">
+        <div class="contato">
+            <h1>Em que podemos te ajudar?</h1>
+
+            <form>
+                <div class="input-group">
+                    <input type="text" class="field" id="nome">
+                    <label for="nome" class="field-label">Nome</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" class="field" id="email">
+                    <label for="email" class="field-label">E-mail*</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="date" class="field" id="datanasc">
+                    <label for="datanasc" class="field-label">Data de Nascimento</label>
+                </div>
+
+                <div class="input-group">
+                    <label for="problem" class="field-label">Tipo de problema:</label>
+                    <select id="problem" class="field">
+                        <option value="#">Primeiro acesso</option>
+                        <option value="#">Problemas ao logar</option>
+                        <option value="#">Outro</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="mensagem" class="field-label">Mensagem</label>
+                    <textarea id="mensagem" class="field" maxlength="2000"> </textarea>
+                </div>
+
+                <div class="accept-terms">
+                    <input type="checkbox" id="termos" name="termos">
+                    <label for="termos">Li e aceito os termos de uso</label>
+                </div>
+
+                <button type="submit" id="submit">Enviar</button>
+                <div class="reset-form">
+                    <button type="reset" id="reset">Resetar</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

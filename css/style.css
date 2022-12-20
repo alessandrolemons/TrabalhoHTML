@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+/* RESET DA PAG */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: "Baloo Da 2";
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* INDEX */
+.index-background{
+    background-image: url(../img/csgo-bkgd.jpg);
+}
+
+/* HEADER */
+header{
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    font-size: 1.25rem;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+}
+
+.logo > img{
+    width: 128px;
+}
+
+header> .header-nav> nav> ul> li{
+    display: inline;
+    padding: 3px 10px;
+    color: #fff;
+    float: right;
+    clear:none;
+}
+
+header> .header-nav> nav> ul> li> a{
+    color: #fff;
+}
+
+/* PSEUDO-CLASSE NO LINK, DENTRO DA LISTA NAO ORDENADA, DENTRO DA DIV HEADER-NAV, DENTRO DO ELEMENTO HEADER */
+header> .header-nav> nav> ul> li> a:hover{
+    opacity: 0.7;
+}
+
+.contact-background, .index-background, .home-background{
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(0.6);
+    position: absolute;
+}
+
+.text{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    text-align: center;
+    color: #fff;
+    min-width: 3rem;
+}
+
+.text h1{
+    font-size: 3rem;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.text h1:hover{
+    transform: translate3d(10px,0,0);
+    opacity: 95%;
+    transition: 0.3s;
+}
+
+.text p{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.text p:hover{
+    transform: translate3d(10px,0,0);
+    transition: 0.3s;
+}
+
+.main-btn{
+    font-size: 1rem;
+    font-weight: 600;
+    background-image: linear-gradient(315deg, #33bcb3 0%, #2787c8 74%);
+    padding: .8rem 3.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.35s;
+    color: #1f1f1f;
+}
+
+.main-btn:hover{
+    transform: translate3d(10px,0,0); 
+    letter-spacing: 3px; 
+}
+
+footer {
+    color: #fff;
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0.625rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* PAGINA HOME */
+.home-wrapper{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.index_btn{
+    z-index: 1;
+}
+
+.home-background{
+    background-image: url(../img/csgo-major.jpg);
+    filter: brightness(0.3);
+}
+
+.home-table{
+    color: #fff;
+    border: #fff 1px solid;
+    position: relative;
+    text-align: center;
+}
+
+table{
+    width: 350px;
+    border-collapse: collapse;
+    border-spacing: 1rem;
+    background-color: #1e1e1e;
+}
+
+.table_color{
+    background-color: #2787c8;
+    color: #1e1e1e;
+    font-weight: bold;
+}
+
+.next-game-title{
+    color: #fff;
+    text-shadow: #181818 3px 5px 3px;
+}
+
+.next-game{
+    color: #fff;
+    display: block;
+    animation: versus 2s infinite ease;
+}
+.next-game .team{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.next-game-teams{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-items: center;
+}
+
+.next-game figure{
+    width: 180px;
+    height: 180px;
+}
+
+.next-game img{
+    width: 100%;
+}
+
+.next-game p{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.ranking{
+    position: relative;
+    color: #fff;
+    margin-left: 200px;
+}
+
+.ranking ol > li{
+    list-style-type: decimal;
+}
+
+.ranking .par{
+    color: #efb12b;
+}
+
+/* PAGINA CONTATO */ 
+.contact-background{
+    background-image: url(../img/contact-bkgd.jpg);
+}
+
+.index_btn{
+    margin: 50px 20px;
+    font-size: 35px;
+    color: #fff;
+    position:absolute;
+}
+
+.contact-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+}
+
+.contato{
+    padding-right: 10rem;
+}
+
+.contato h1{
+    position: relative;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.contato form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+    
+.input-group{
+    position: relative;
+}
+    
+.input-group textarea{
+    resize: none;  
+}
+    
+.field{
+    border: none;
+    width: 20rem;
+    height: 3rem;
+    border-bottom: 1.5px dashed rgb(65, 64, 64);
+    outline: none;
+    margin-top: 2rem;   
+}
+    
+.field-label{
+    position: absolute;
+    left: 0;
+    text-transform: uppercase;
+    color: #fff;
+}
+   
+
+.accept-terms{
+    z-index: 1;
+    background-color: #353535;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.contato #submit, #reset{
+    position: relative;
+}
+
+.contato #submit{
+    font-size: .9rem;
+    text-transform: uppercase;
+    color: white;
+    background-image: linear-gradient(315deg, #e9a105 0%, #b35808 74%);
+    width: 15rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1.5rem;  
+}
+
+.contato #submit:hover{
+    color: #000;
+    transform: translate3d(0, -1px, 0);
+}
+
+.contato #reset{  
+    font-size: .9rem;
+    text-transform: uppercase;
+    color: white;
+    background: linear-gradient(90deg, #f32304 0%, #9a0e04 64%);
+    width: 10rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;  
+}
+
+.contato #reset:hover{
+    color: #000;
+    transform: translate3d(0, -1px, 0);
+}
+
+
+/* ANIMAÇÕES */
+@keyframes versus {
+    0%, 100%{
+        transform:translate3d(0,0,0);
+    }
+    50%{
+        transform: translate3d(0,5px,0);
+    }
+}
